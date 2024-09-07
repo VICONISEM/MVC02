@@ -16,6 +16,12 @@ namespace MVC02
                     await context.Response.WriteAsync("Hello From master");
                 });
 
+
+
+
+
+
+
                 endpoints.MapGet("/Home", async context =>
                 {
                     await context.Response.WriteAsync("Hello From Home");
