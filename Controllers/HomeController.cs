@@ -6,13 +6,24 @@ namespace MVC02.Controllers
     {
         public IActionResult Index()
         {
-            return RedirectToAction("CR");
+            return View();
         }
 
 
-        public IActionResult CR()
+        public IActionResult AboutUs()
         {
-            return Content ("Hello from CR Action");
+            return View ();
+        }
+
+
+        public IActionResult ContactUS()
+        {
+            return View();
+        }
+
+        public IActionResult Privacy()
+        {
+            return View();
         }
     }
 }
