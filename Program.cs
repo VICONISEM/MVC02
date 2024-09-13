@@ -7,10 +7,13 @@ namespace MVC02
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-            builder.Services.AddControllers();
+            builder.Services.AddControllersWithViews();
             var app = builder.Build();
            
-
+            /*
+             * each Action Have View to return  
+             
+             */
             #region Old Routing 
             //app.UseRouting();
 
