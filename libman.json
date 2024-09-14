@@ -4,13 +4,12 @@
   "libraries": [
     {
       "library": "bootstrap@5.3.3",
-      "destination": "wwwroot/bootstrap/",
-      "files": [
-        "js/bootstrap.min.js",
-        "js/bootstrap.bundle.min.js",
-        "js/bootstrap.bundle.js",
-        "css/bootstrap.min.css"
-      ]
+      "destination": "wwwroot/bootstrap/"
+    },
+    {
+      "provider": "unpkg",
+      "library": "bootstrap@5.3.3",
+      "destination": "wwwroot/bootstrap/"
     }
   ]
 }

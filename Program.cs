@@ -9,13 +9,13 @@ namespace MVC02
             var builder = WebApplication.CreateBuilder(args);
             builder.Services.AddControllersWithViews();
             var app = builder.Build();
-           
+            app.UseStaticFiles();
             /*
              * each Action Have View to return  
              
              */
             #region Old Routing 
-            //app.UseRouting();
+            //
 
             //app.UseEndpoints(endpoints =>
             //{
@@ -61,10 +61,13 @@ namespace MVC02
             #endregion
 
 
+
+
             app.MapControllerRoute(
-                name: "default"
+                  name: "default"
                 , pattern: "/{Controller=Home}/{Action=Index}"
-                , defaults:new {Controller="Home", Action="Index" }
+                ,defaults:new {Controller="Home",Action="Index" }
+               
 
                 );
 
